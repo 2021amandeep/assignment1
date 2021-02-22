@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    ol { counter-reset: item }
+    li{ display: block }
+    li:before { content: counters(item, ".") " "; counter-increment: item }
+  </style>
+</head>
+<body>
+
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+
+<ol>
+  <li>Fruits</li>
+  <li>Vegetable
+    <ol>
+      <li>Potato</li>
+      <li>Tomato</li>
+      <ol>
+      <li>Potato</li>
+      <li>Tomato</li>
+    </ol>
+    </ol>
+  </li>
+  <li>Shoes</li>
+</ol>
+
+
+<ol>
+  <li>li element
+    <ol>
+      <li>sub li element</li>
+      <li>sub li element</li>
+      <li>sub li element</li>
+    </ol>
+  </li>
+  <li>li element</li>
+  <li>li element
+    <ol>
+      <li>sub li element</li>
+      <li>sub li element</li>
+      <li>sub li element</li>
+    </ol>
+  </li>
+</ol>
+
+
+</body>
+</html>
